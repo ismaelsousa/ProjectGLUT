@@ -14,6 +14,14 @@ static GLfloat spin = 0.0;
 double rotacao_x= 0;
 double rotacao_y=0;
 
+
+class Vetor{
+public:
+    Vetor(int *v[]){
+
+    }
+};
+
 class Bala{
 public:
     int x;
