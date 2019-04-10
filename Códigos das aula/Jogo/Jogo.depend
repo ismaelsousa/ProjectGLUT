@@ -247,7 +247,7 @@
 	<stdlib.h>
 	<iostream>
 
-1554912185 source:c:\users\master\documents\github\projectglut\códigos das aula\jogo\main.cpp
+1554936848 source:c:\users\master\documents\github\projectglut\códigos das aula\jogo\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdio.h>
@@ -255,8 +255,18 @@
 	<iostream>
 	"Vetor.h"
 
-1554912065 source:c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\vetor.cpp
+1554935691 source:c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\vetor.cpp
+	"Vetor.h"
+	<cmath>
+
+1554935695 c:\users\master\documents\github\projectglut\códigos das aula\jogo\include\vetor.h
+
+1554935609 source:c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\matriz.cpp
+	"Matriz.h"
 	"Vetor.h"
 
-1554912986 c:\users\master\documents\github\projectglut\códigos das aula\jogo\include\vetor.h
+1554936821 c:\users\master\documents\github\projectglut\códigos das aula\jogo\include\matriz.h
+	"Vetor.h"
+
+1554936667 c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\vetor.h
 

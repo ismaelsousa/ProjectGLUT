@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include <iostream>
 #include "Vetor.h"
+
 using namespace std;
 
 static GLfloat spin = 0.0;
