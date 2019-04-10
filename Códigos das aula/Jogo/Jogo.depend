@@ -247,3 +247,16 @@
 	<stdlib.h>
 	<iostream>
 
+1554912185 source:c:\users\master\documents\github\projectglut\códigos das aula\jogo\main.cpp
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	"Vetor.h"
+
+1554912065 source:c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\vetor.cpp
+	"Vetor.h"
+
+1554912986 c:\users\master\documents\github\projectglut\códigos das aula\jogo\include\vetor.h
+
