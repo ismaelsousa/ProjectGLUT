@@ -259,7 +259,7 @@
 	"Vetor.h"
 	<cmath>
 
-1554935695 c:\users\master\documents\github\projectglut\códigos das aula\jogo\include\vetor.h
+1554942210 c:\users\master\documents\github\projectglut\códigos das aula\jogo\include\vetor.h
 
 1554935609 source:c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\matriz.cpp
 	"Matriz.h"
@@ -269,4 +269,11 @@
 	"Vetor.h"
 
 1554936667 c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\vetor.h
+
+1554940087 source:c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\matrix.cpp
+	"Matrix.h"
+
+1554942210 c:\users\master\documents\github\projectglut\códigos das aula\jogo\include\matrix.h
+	"Vetor.h"
+	<vector>
 

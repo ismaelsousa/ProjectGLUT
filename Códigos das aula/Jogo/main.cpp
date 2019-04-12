@@ -16,6 +16,8 @@ static GLfloat spin = 0.0;
 double rotacao_x= 0;
 double rotacao_y=0;
 
+
+
 Vetor *v = new Vetor(1.0,1.0,1.0,1.0);
 Vetor *v2 = new Vetor(2.0,2.0,2.0,2.0);
 Vetor v3 = *v2*7;
