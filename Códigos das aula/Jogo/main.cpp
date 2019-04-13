@@ -9,18 +9,17 @@
 #include <stdlib.h>
 #include <iostream>
 #include "Vetor.h"
+#include "Matriz.h"
 
-using namespace std;
+
+
+
 
 static GLfloat spin = 0.0;
 double rotacao_x= 0;
 double rotacao_y=0;
 
 
-
-Vetor *v = new Vetor(1.0,1.0,1.0,1.0);
-Vetor *v2 = new Vetor(2.0,2.0,2.0,2.0);
-Vetor v3 = *v2*7;
 
 
 
@@ -228,10 +227,6 @@ int main(int argc, char** argv){
         glutReshapeFunc(reshape);
         glutMouseFunc(mouse);
         glutKeyboardFunc(tecla);
-        printf("%f\n",v3.x);
-        printf("%f\n",v3.y);
-        printf("%f\n",v3.z);
-        printf("%f\n",v3.w);
         glutMainLoop();
 
 

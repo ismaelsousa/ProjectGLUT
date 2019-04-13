@@ -1,5 +1,11 @@
 #include "Vetor.h"
 #include <cmath>
+#include<stdio.h>
+Vetor::Vetor()
+{
+    //ctor
+}
+
 Vetor::Vetor(float x, float y, float z,float w){
     this->x = x;
     this->y = y;
@@ -29,6 +35,11 @@ Vetor Vetor::operator- (Vetor v){
 Vetor Vetor::operator* (int n){
     return Vetor(this->x *n,this->y *n,this->z *n,this->w *n);
 }
+float Vetor::operator* (Vetor v){//retorn um numero calculado
+    return ((this->x * v.x)+(this->y * v.y)+(this->z * v.z)+(this->w * v.w));
+}
+
+
 
 //modulo
 float Vetor::modulo(){

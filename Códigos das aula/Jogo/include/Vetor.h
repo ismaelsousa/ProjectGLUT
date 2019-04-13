@@ -2,24 +2,31 @@
 #define VETOR_H
 
 
-class Vetor{
+class Vetor
+{
     public:
+
         float x;
         float y;
         float z;
         float w;
         //construtor
+        Vetor();
         Vetor(float x, float y, float z,float w);
         Vetor(const Vetor &v);
         //operadores
-        Vetor operator+ (Vetor v);//adição
-        Vetor operator- (Vetor v);//subtração
+        Vetor operator+ (Vetor v);//adiï¿½ï¿½o
+        Vetor operator- (Vetor v);//subtraï¿½ï¿½o
         Vetor operator* (int n);//produto por escalar
+        float operator* (Vetor v); //mult dois vetores
         float modulo();
         Vetor normalizar();
         Vetor inverto();
         Vetor produtoVetorial(Vetor v);
 
+    protected:
+
+    private:
 };
 
 #endif // VETOR_H
