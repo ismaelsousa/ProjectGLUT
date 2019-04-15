@@ -11,17 +11,18 @@
 #include "Vetor.h"
 #include "Matriz.h"
 
-
-
-
-
+int x =0;
+int y = 0;
 static GLfloat spin = 0.0;
 double rotacao_x= 0;
 double rotacao_y=0;
-
-
-
-
+void desenhaTrinagulo(float x, float y){
+    glBegin(GL_TRIANGLES);
+        glVertex2f(x,y+4);
+        glVertex2f(x-4,y);
+        glVertex2f(x+4,y);
+    glEnd();
+}
 
 class Bala{
 public:
@@ -128,6 +129,9 @@ Nave *navee = new Nave(0,-48, false);
 
 void tecla(unsigned char tecla, int x, int y){
     if (tecla == 'd'){
+             printf("difite uma cordenada");
+        int i =0;
+        scanf("%d",&i);
         if((navee->x+4)<50)
             navee->x+=4;
         //rotacao_y += 11;
@@ -188,35 +192,28 @@ void mouse(int button, int state, int x, int y){
     }
 
 }
+Vetor v  = Vetor(x,y,0.0,1);
 void display(){
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
     glPushMatrix();
     glRotatef(rotacao_x,1.0,0.0,0.0); // rotação coloca o eixo de rotação
     glRotatef(rotacao_y,0.0,1.0,0.0);
 
-    glColor3f(1.0,0.0,0.0);
-    navee->desenha();
 
-    //imprime tiros
+    v = v.transladar(Vetor(x,y,0.0,1));
+    desenhaTrinagulo(v.x,v.y);
 
-    glColor3f(1.0,1.0,1.0);
-    for(int in = 0; in<30;in++){
-        if(tiros[in] != NULL)
-            tiros[in]->desenhatiro();
-    }
-
-    glColor3f(1.0,1.0,0.0);
-    if(inimigos->colisao(navee->x,navee->y)){
-        delete(inimigos);
-        inimigos = new Nave(0,48,true);
-    }
-    inimigos->trajetoriaInimiga();
 
     glPopMatrix();
     glutSwapBuffers();
 }
 
 int main(int argc, char** argv){
+    printf("difite uma cordenada");
+
+        scanf("%d",&x);
+        scanf("%d",&y);
+
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGB|GLUT_DOUBLE|GLUT_DEPTH);
         glutInitWindowSize(500, 500);
@@ -229,10 +226,8 @@ int main(int argc, char** argv){
         glutKeyboardFunc(tecla);
         glutMainLoop();
 
+    return 0;
 
-        printf("difite uma cordenada");
-        int i =0;
-        scanf("%d",&i);
 
 
 }
