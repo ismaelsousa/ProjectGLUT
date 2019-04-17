@@ -10,7 +10,7 @@
 #include <iostream>
 #include "Vetor.h"
 #include "Matriz.h"
-
+#include "Bala.h"
 
 
 
@@ -23,28 +23,7 @@ double rotacao_y=0;
 
 
 
-class Bala{
-public:
-    int x;
-    int y;
-    Bala(int a, int b){
-        this->x = a;
-        this->y = b;
-    }
 
-    void desenhatiro(){
-        glBegin(GL_TRIANGLES);
-            glVertex2d(this->x, this->y+2);
-            glVertex2d(this->x-2,this->y);
-            glVertex2d(this->x+2,this->y);
-        glEnd();
-        atualizaY();
-        glutPostRedisplay();
-    }
-    void atualizaY(){
-        this->y+=5;
-    }
-};
 Bala *tiros[30];
 class Nave{
 public:

@@ -287,3 +287,10 @@
 1555337306 c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\matriz.h
 	"Vetor.h"
 
+1555511453 source:c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\bala.cpp
+	"Bala.h"
+
+1555511473 c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\bala.h
+	<GLUT/glut.h>
+	<GL/glut.h>
+

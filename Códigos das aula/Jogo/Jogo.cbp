@@ -48,6 +48,8 @@
 		</Linker>
 		<Unit filename="include/Vetor.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Bala.cpp" />
+		<Unit filename="src/Bala.h" />
 		<Unit filename="src/Matriz.cpp" />
 		<Unit filename="src/Matriz.h" />
 		<Unit filename="src/Vetor.cpp" />
