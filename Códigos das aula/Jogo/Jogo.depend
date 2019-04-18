@@ -261,7 +261,11 @@
 	<cmath>
 	<stdio.h>
 
+<<<<<<< HEAD
 1555337281 c:\users\master\documents\github\projectglut\códigos das aula\jogo\include\vetor.h
+=======
+1554935695 c:\users\master\documents\github\projectglut\códigos das aula\jogo\include\vetor.h
+>>>>>>> parent of 06312d0... add matriz
 
 1555337300 source:c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\matriz.cpp
 	"Matriz.h"
@@ -271,6 +275,7 @@
 
 1554936667 c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\vetor.h
 
+<<<<<<< HEAD
 1554940087 source:c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\matrix.cpp
 	"Matrix.h"
 
@@ -294,3 +299,5 @@
 	<GLUT/glut.h>
 	<GL/glut.h>
 
+=======
+>>>>>>> parent of 06312d0... add matriz

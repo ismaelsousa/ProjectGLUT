@@ -1,4 +1,5 @@
 #include "Matriz.h"
+<<<<<<< HEAD
 //estou usando
 //construtores
 Matriz::Matriz()
@@ -100,3 +101,12 @@ Vetor Matriz::extrairColuna(int c){
     return Vetor();
 }
 
+=======
+
+Matriz::Matriz(Vetor x, Vetor y,Vetor z,Vetor w){
+    this->m[0] = x;
+    this->m[1] = y;
+    this->m[2] = z;
+    this->m[3] = w;
+}
+>>>>>>> parent of 06312d0... add matriz

@@ -48,10 +48,13 @@
 		</Linker>
 		<Unit filename="include/Vetor.h" />
 		<Unit filename="main.cpp" />
+<<<<<<< HEAD
 		<Unit filename="src/Bala.cpp" />
 		<Unit filename="src/Bala.h" />
 		<Unit filename="src/Matriz.cpp" />
 		<Unit filename="src/Matriz.h" />
+=======
+>>>>>>> parent of 06312d0... add matriz
 		<Unit filename="src/Vetor.cpp" />
 		<Extensions>
 			<code_completion />
