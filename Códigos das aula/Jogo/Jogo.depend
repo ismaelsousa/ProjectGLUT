@@ -287,3 +287,28 @@
 1555107538 c:\users\master\documents\github\projectglut\códigos das aula\jogo\src\matriz.h
 	"Vetor.h"
 
+1555595502 source:c:\users\master\documents\github\recuperacao\códigos das aula\jogo\src\matriz.cpp
+	"Matriz.h"
+
+1555595502 c:\users\master\documents\github\recuperacao\códigos das aula\jogo\src\matriz.h
+	"Vetor.h"
+
+1555595502 c:\users\master\documents\github\recuperacao\códigos das aula\jogo\include\vetor.h
+
+1555595502 source:c:\users\master\documents\github\recuperacao\códigos das aula\jogo\src\vetor.cpp
+	"Vetor.h"
+	<cmath>
+	<stdio.h>
+
+1555697445 source:c:\users\master\documents\github\recuperacao\códigos das aula\jogo\main.cpp
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	"Vetor.h"
+	"Matriz.h"
+
+1555595502 c:\users\master\documents\github\recuperacao\códigos das aula\jogo\include\matriz.h
+	"Vetor.h"
+

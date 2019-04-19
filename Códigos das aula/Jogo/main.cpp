@@ -31,7 +31,6 @@ public:
         this->x = a;
         this->y = b;
     }
-
     void desenhatiro(){
         glBegin(GL_TRIANGLES);
             glVertex2d(this->x, this->y+2);
@@ -42,7 +41,18 @@ public:
         glutPostRedisplay();
     }
     void atualizaY(){
-        this->y+=5;
+        this->y+=1;
+        if(this->y>=50)
+            delete(this);
+    }
+    bool colisao(int xN , int yN){
+        if((this->y < yN+10) &&(this->y > yN-10) &&   (xN-4 <= this->x)   && (this->x <= xN+4) ){
+                printf("colidiu: x %d, xN %d\n",this->x, xN);
+                printf("colidiu: y %d, yN %d\n",this->y, yN);
+            return true;
+        }else{
+            return false;
+        }
     }
 };
 Bala *tiros[30];
@@ -104,14 +114,13 @@ public:
             this->qtdTiro++;
             if(this->qtdTiro==30){
                 this->qtdTiro = 0;
-                delete(tiros[this->qtdTiro]);
-
+                for(int apaga = 0; apaga< 30; apaga++)
+                    delete(tiros[apaga]);
             }
         }
     }
     bool colisao(int xN , int yN){
         if(((this->y)-4 < yN+4) &&   (xN-4 <= this->x)   && (this->x <= xN+4) ){
-             printf("colidiu xn:%d xi:%d yn:%d yi:%d\n",xN,x,yN,y);
             return true;
         }else{
             return false;
@@ -120,7 +129,7 @@ public:
 };
 
 //nave do inimigo
-Nave *inimigos = new Nave(0,48,true);
+Nave *inimigos = new Nave(0,55,true);
 
 
 //minha nave
@@ -201,14 +210,22 @@ void display(){
 
     glColor3f(1.0,1.0,1.0);
     for(int in = 0; in<30;in++){
-        if(tiros[in] != NULL)
+        if(tiros[in] != NULL){
             tiros[in]->desenhatiro();
+            if(tiros[in]->colisao(inimigos->x,inimigos->y)){
+                delete(inimigos);
+                delete(tiros[in]);
+                inimigos = new Nave(0,55,true);
+
+            }
+
+        }
     }
 
     glColor3f(1.0,1.0,0.0);
     if(inimigos->colisao(navee->x,navee->y)){
         delete(inimigos);
-        inimigos = new Nave(0,48,true);
+        inimigos = new Nave(0,55,true);
     }
     inimigos->trajetoriaInimiga();
 
